@@ -1,7 +1,7 @@
 # lwc-demo-chart-components
 
 <div style="text-align:center">
-  <img src="https://i.imgur.com/zWCphDD.png" />
+  <img src="https://i.imgur.com/VN8RsP3.png" />
 </div>
 
 ## Available design sidebar fields
