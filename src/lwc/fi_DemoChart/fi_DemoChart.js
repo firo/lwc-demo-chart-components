@@ -36,6 +36,8 @@ export default class fi_DemoChart extends LightningElement {
     @api y5value;
     @api y6value;
     @api y7value;
+    @api strxAxesLabel;
+    @api stryAxesLabel;
 
     chartJSRendered = false;
 
@@ -127,7 +129,7 @@ export default class fi_DemoChart extends LightningElement {
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'Day Hours'
+							labelString: this.strxAxesLabel
 						}
 					}],
 					yAxes: [{
@@ -137,7 +139,7 @@ export default class fi_DemoChart extends LightningElement {
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'Usage'
+							labelString: this.stryAxesLabel
 						}
 					}]
 				}
