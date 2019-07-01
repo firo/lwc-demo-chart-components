@@ -17,6 +17,8 @@
             <property name="strDatasetLabel2" type="String" label="Enter the Dataset 2 label"/>
             <property name="strDatasetBorderColor2" type="String" label="Enter the Dataset 2 border color" default="54, 162, 235"/>
             <property name="strDatasetBackgroundColor2" type="String" label="Enter the Dataset 2 background color" default="54, 162, 235"/>
+            <property name="strxAxesLabel" type="String" label="Enter the xAxes label" default="Usage"/>
+            <property name="stryAxesLabel" type="String" label="Enter the yAxes label" default="Day week"/>
             <property name="x1label" type="String" label="Enter the 1st X label" default="Mon"/>
             <property name="x2label" type="String" label="Enter the 2nd X label" default="Tue"/>
             <property name="x3label" type="String" label="Enter the 3rd X label" default="Wed"/>
