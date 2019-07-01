@@ -9,7 +9,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <property name="strIconName" type="String" default="utility:chart" label="Enter Icon Name"/>
-            <property name="strTitle" type="String" default="Daily Usage" label="Enter the title"/>
+            <property name="strTitle" type="String" default="Weekly Usage" label="Enter the title"/>
             <property name="bolChartHover" type="Boolean" default="true" label="set Hover on/off"/>
             <property name="strDatasetLabel1" type="String" label="Enter the Dataset 1 label"/>
             <property name="strDatasetBorderColor1" type="String" label="Enter the Dataset 1 border color" default="75, 192, 192"/>
@@ -17,13 +17,13 @@
             <property name="strDatasetLabel2" type="String" label="Enter the Dataset 2 label"/>
             <property name="strDatasetBorderColor2" type="String" label="Enter the Dataset 2 border color" default="54, 162, 235"/>
             <property name="strDatasetBackgroundColor2" type="String" label="Enter the Dataset 2 background color" default="54, 162, 235"/>
-            <property name="x1label" type="String" label="Enter the 1st X label" default="12am"/>
-            <property name="x2label" type="String" label="Enter the 2nd X label" default="4am"/>
-            <property name="x3label" type="String" label="Enter the 3rd X label" default="8am"/>
-            <property name="x4label" type="String" label="Enter the 4th X label" default="12pm"/>
-            <property name="x5label" type="String" label="Enter the 5th X label" default="4pm"/>
-            <property name="x6label" type="String" label="Enter the 6th X label" default="8pm"/>
-            <property name="x7label" type="String" label="Enter the 7th X label" default="12am"/>
+            <property name="x1label" type="String" label="Enter the 1st X label" default="Mon"/>
+            <property name="x2label" type="String" label="Enter the 2nd X label" default="Tue"/>
+            <property name="x3label" type="String" label="Enter the 3rd X label" default="Wed"/>
+            <property name="x4label" type="String" label="Enter the 4th X label" default="Thu"/>
+            <property name="x5label" type="String" label="Enter the 5th X label" default="Fri"/>
+            <property name="x6label" type="String" label="Enter the 6th X label" default="Sat"/>
+            <property name="x7label" type="String" label="Enter the 7th X label" default="Sun"/>
             <property name="x1value" type="Integer" label="Enter Serie1 1st X value" default="4"/>
             <property name="x2value" type="Integer" label="Enter Serie1 2nd X value" default="1"/>
             <property name="x3value" type="Integer" label="Enter Serie1 3rd X value" default="3"/>
