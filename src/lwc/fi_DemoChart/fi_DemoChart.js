@@ -7,7 +7,7 @@ import ChartCSS from '@salesforce/resourceUrl/ChartJSCSS';
 export default class fi_DemoChart extends LightningElement {
 
     @api strIconName;
-    @api strTitle ='Daily Usage';
+    @api strTitle;
     @api bolChartHover;
     @api strDatasetLabel1 = 'Average Usage';
     @api strDatasetBorderColor1;
@@ -39,6 +39,7 @@ export default class fi_DemoChart extends LightningElement {
     @api strxAxesLabel;
     @api stryAxesLabel;
 
+
     chartJSRendered = false;
 
     renderedCallback() {
@@ -68,6 +69,7 @@ export default class fi_DemoChart extends LightningElement {
                 );
             });
     }
+
     initializeD3() {
 		var config = {
 			type: 'line',
@@ -75,8 +77,8 @@ export default class fi_DemoChart extends LightningElement {
 				labels: [this.x1label, this.x2label, this.x3label, this.x4label, this.x5label, this.x6label, this.x7label],
 				datasets: [{
 					label: this.strDatasetLabel1,
-					backgroundColor: 'rgba('+this.strDatasetBackgroundColor1+')',
-					borderColor: 'rgba('+this.strDatasetBorderColor1+')',
+                    backgroundColor: 'rgba(' + checkColor(this.strDatasetBackgroundColor1) + ')',
+					borderColor: 'rgba(' + checkColor(this.strDatasetBorderColor1) + ')',
 					data: [
 						this.x1value,
 						this.x2value,
@@ -148,5 +150,20 @@ export default class fi_DemoChart extends LightningElement {
         var ctx = this.template.querySelector('canvas').getContext('2d');
         // eslint-disable-next-line no-undef
         window.myLine = new Chart(ctx, config);
+
+        function checkColor (code){
+            if (code.startsWith("#")) {code = hexToRgb(code).rgb;}
+            return code;
+        }
+
+        function hexToRgb(hex) {
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16),
+                rgb: ""+(parseInt(result[1], 16))+","+parseInt(result[2], 16)+","+parseInt(result[3], 16)
+            } : null;
+        }
     }
 }
