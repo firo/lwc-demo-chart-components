@@ -95,8 +95,8 @@ export default class fi_DemoChart extends LightningElement {
 				}, {
 					label: this.strDatasetLabel2,
 					fill: false,
-					backgroundColor: 'rgba('+this.strDatasetBackgroundColor2+')',
-					borderColor: 'rgba('+this.strDatasetBorderColor2+')',
+					backgroundColor: 'rgba('+ checkColor(this.strDatasetBackgroundColor2) +')',
+					borderColor: 'rgba('+ checkColor(this.strDatasetBorderColor2) +')',
 					data: [
 						this.y1value,
 						this.y2value,
