@@ -8,7 +8,7 @@
 
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <property name="strIconName" type="String" default="utility:chart" label="Enter Icon Name"/>
+            <property name="strIconName" type="String" default="utility:metrics" label="Enter Icon Name"/>
             <property name="strTitle" type="String" default="Weekly Usage" label="Enter the title"/>
             <property name="bolChartHover" type="Boolean" default="true" label="set Hover on/off"/>
             <property name="strDatasetLabel1" type="String" label="Enter the Dataset 1 label"/>
