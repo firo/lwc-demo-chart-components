@@ -8,7 +8,7 @@
 - Title & Icon Chart
 - DataSet values and labels
 
-## Hot to use it in your Org?
+## How to use it in your Org?
 - Click on "deploy on Salesforce"
 - Grant access to your Org
 - Click Deploy
