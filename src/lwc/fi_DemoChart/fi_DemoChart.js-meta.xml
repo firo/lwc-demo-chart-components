@@ -4,8 +4,9 @@
     <isExposed>true</isExposed>
     <targets>
         <target>lightning__RecordPage</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
     </targets>
-
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <property name="strIconName" type="String" default="utility:metrics" label="Enter Icon Name"/>
@@ -41,6 +42,39 @@
             <property name="y6value" type="Integer" label="Enter Serie2 6th X value" default="4"/>
             <property name="y7value" type="Integer" label="Enter Serie2 7th X value" default="2"/>
         </targetConfig>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="strIconName" type="String" default="utility:metrics" label="Enter Icon Name"/>
+            <property name="strTitle" type="String" default="Weekly Usage" label="Enter the title"/>
+            <property name="bolChartHover" type="Boolean" default="true" label="set Hover on/off"/>
+            <property name="strDatasetLabel1" type="String" label="Enter the Dataset 1 label"/>
+            <property name="strDatasetBorderColor1" type="String" label="Enter the Dataset 1 border color" default="75, 192, 192"/>
+            <property name="strDatasetBackgroundColor1" type="String" label="Enter the Dataset 1 background color" default="75, 192, 192"/>
+            <property name="strDatasetLabel2" type="String" label="Enter the Dataset 2 label"/>
+            <property name="strDatasetBorderColor2" type="String" label="Enter the Dataset 2 border color" default="54, 162, 235"/>
+            <property name="strDatasetBackgroundColor2" type="String" label="Enter the Dataset 2 background color" default="54, 162, 235"/>
+            <property name="strxAxesLabel" type="String" label="Enter the xAxes label" default="Usage"/>
+            <property name="stryAxesLabel" type="String" label="Enter the yAxes label" default="Day week"/>
+            <property name="x1label" type="String" label="Enter the 1st X label" default="Mon"/>
+            <property name="x2label" type="String" label="Enter the 2nd X label" default="Tue"/>
+            <property name="x3label" type="String" label="Enter the 3rd X label" default="Wed"/>
+            <property name="x4label" type="String" label="Enter the 4th X label" default="Thu"/>
+            <property name="x5label" type="String" label="Enter the 5th X label" default="Fri"/>
+            <property name="x6label" type="String" label="Enter the 6th X label" default="Sat"/>
+            <property name="x7label" type="String" label="Enter the 7th X label" default="Sun"/>
+            <property name="x1value" type="Integer" label="Enter Serie1 1st X value" default="4"/>
+            <property name="x2value" type="Integer" label="Enter Serie1 2nd X value" default="1"/>
+            <property name="x3value" type="Integer" label="Enter Serie1 3rd X value" default="3"/>
+            <property name="x4value" type="Integer" label="Enter Serie1 4th X value" default="5"/>
+            <property name="x5value" type="Integer" label="Enter Serie1 5th X value" default="3"/>
+            <property name="x6value" type="Integer" label="Enter Serie1 6th X value" default="5"/>
+            <property name="x7value" type="Integer" label="Enter Serie1 7th X value" default="2"/>
+            <property name="y1value" type="Integer" label="Enter Serie2 1st X value" default="1"/>
+            <property name="y2value" type="Integer" label="Enter Serie2 2nd X value" default="4"/>
+            <property name="y3value" type="Integer" label="Enter Serie2 3rd X value" default="3"/>
+            <property name="y4value" type="Integer" label="Enter Serie2 4th X value" default="4"/>
+            <property name="y5value" type="Integer" label="Enter Serie2 5th X value" default="5"/>
+            <property name="y6value" type="Integer" label="Enter Serie2 6th X value" default="4"/>
+            <property name="y7value" type="Integer" label="Enter Serie2 7th X value" default="2"/>
+        </targetConfig>
     </targetConfigs>
-
 </LightningComponentBundle>
